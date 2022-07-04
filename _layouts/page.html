@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<head>
+    {% include head.html %}
+</head>
+
+<body class="bg-light primary-color">
+    
+    <!-- Navigation -->
+    <ul>
+        <li class="nav-title">post titles</li>
+        <li class="nav-link"><a href="//aezlo.com">main</a></li>
+        <li class="nav-link"><a href="/boozila">boozila</a></li>
+    </ul>
+
+    <main>
+        <header class="header">
+            <h1>aeziFtbl.</h1>
+            <h3>simple, unbridled and intriguing football.</h3>
+        </header>
+
+        <div class="content">
+            {% for post in site.posts %}
+                <section class="post">
+                    <img src="{{ post.image }}" style="float: left;" alt="postImage"></img>
+                    <h2>{{ post.title }}</h2>
+                    <h4>{{ post.description }}</h4>
+                </section>
+            {% endfor %}
+        </div>
+       
+    </main>
+</body>
+
+{{ content }}
