@@ -4014,7 +4014,7 @@ article.blog-single .blog-content {
  * ## comments - _blog.scss
  * ------------------------------------------------------------------- */
 
-.comments-wrap {
+.comments, #disqus-thread {
     background-color: #f0f0f0;
     padding: 8.4rem 0 9rem;
 }
@@ -4144,4 +4144,10 @@ article.blog-single .blog-content {
     .commentlist .comment__avatar {
         display: none;
     }
+}
+
+.disqus-container {
+    padding: 0px 60px;
+    background-color: white;
+    color: black;
 }
